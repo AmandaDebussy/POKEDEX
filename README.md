@@ -1,0 +1,1 @@
+## É definitivamente uma Pokedex.
