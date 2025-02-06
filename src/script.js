@@ -22,7 +22,7 @@ async function buscarPokemon(pokemon) {
         const data = await response.json();
 
         // Atualiza a imagem, o nome e o ID atual
-        currentPokemonId = data.id; // Atualiza o ID com o dado retornado pela API
+        currentPokemonId = data.id; 
         pokemonImage.src = data.sprites.front_default;
         pokemonImage.alt = data.name;
         pokemonName.textContent = data.name.charAt(0).toUpperCase() + data.name.slice(1); // Nome formatado
@@ -51,7 +51,7 @@ function mostrarEspecificacoes(pokemonData) {
     const height = pokemonData.height / 10; // Convertendo para metros
     const weight = pokemonData.weight / 10; // Convertendo para kg
 
-    // Exibindo as especificações
+    // Exibindo as especificações no HTML
     pokemonDetails.innerHTML = `
         <p><strong>Tipos:</strong> ${types}</p>
         <p><strong>Habilidades:</strong> ${abilities}</p>
@@ -70,13 +70,13 @@ async function navegarPokemon(offset) {
     await buscarPokemon(novoId); // Busca o Pokémon pelo novo ID
 }
 
-// Eventos dos botões de navegação
+// Eventos dos botões de navegação que retorna e continua a busca pelos pokemons
 backButton.addEventListener('click', () => {
-    navegarPokemon(-1); // Volta um Pokémon
+    navegarPokemon(-1); 
 });
 
 nextButton.addEventListener('click', () => {
-    navegarPokemon(1); // Avança um Pokémon
+    navegarPokemon(1); 
 });
 
 // Evento no campo de pesquisa para buscar por nome
