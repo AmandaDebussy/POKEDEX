@@ -2,7 +2,7 @@
 const BarraPesquisa = document.querySelector('#PesquisarPokemon');
 const pokemonImage = document.querySelector('#pokemon_image');
 const pokemonName = document.querySelector('#exibirnomepokemon');
-const pokemonDetails = document.querySelector('#pokemon_details'); // Novo contêiner para especificações
+const pokemonDetails = document.querySelector('#pokemon_details'); // Novo contêiner para especificações no CSS
 const backButton = document.querySelector('#back_button');
 const nextButton = document.querySelector('#next_button');
 
