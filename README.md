@@ -37,6 +37,6 @@ A Pokédex consome dados da [PokéAPI](https://pokeapi.co/), uma API gratuita co
 
 1. Clone o repositório:
    ```bash
-   git clone git@github.com:seu-usuario/seu-repo.git
+   https://github.com/AmandaDebussy/POKEDEX.git
 
 
